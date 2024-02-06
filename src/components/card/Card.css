@@ -40,9 +40,28 @@
     width: 95%;
     height: 100%;
     border-radius: 15px;
-    
+    position: relative;
 }
 
+.pattern::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(./../../../public/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.pattern:hover::after {
+    opacity: 1;
+    background: linear-gradient(90deg, rgba(149,251,250,0.5) 0%, rgba(149,251,250,0.5) 20%),url(./../../../public/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
 
 .text {
     width: 100%;
@@ -70,6 +89,10 @@
     padding-left: 20px;
     margin: 0;
     filter: opacity(20%);
+}
+
+.text .equi:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 .text .london {
@@ -163,6 +186,10 @@
     color: hsl(0, 0%, 100%);
     font-family: Font;
     font-weight: 400;
+}
+
+.underCard p:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 .underCard span {
