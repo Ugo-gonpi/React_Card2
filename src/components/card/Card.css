@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Font";
+    src: local("Outfit-Medium"),
+      url("./../../fonts/static/Outfit-Medium.ttf") format("truetype");
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Font;
+}
+
+.mainCard {
+    height: 550px;
+    width: 320px;
+    background-color: hsl(216, 50%, 16%);
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 95%;
+    height: 280px;
+    padding-top: 15px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pattern {
+    background-image: url(./../../assets/image-equilibrium.jpg);
+    background-size: contain;
+    width: 95%;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+
+
+.text {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Font;
+    position: relative;
+}
+
+.text .equi {
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: normal;
+}
+
+.text .mainText {
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 20px;
+    margin: 0;
+    filter: opacity(20%);
+}
+
+.text .london {
+    margin-left: 25px;
+    font-weight: normal;
+    font-size: medium;
+}
+
+.miniText {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 70px;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+    padding-bottom: 15px;
+    
+}
+
+.underText1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.crystal {
+    background-image: url(./../../../public/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 14%;
+    height: 54%;
+}
+
+.text1 {
+    color: hsl(178, 100%, 50%);
+    font-size: 13px;
+}
+
+.underText2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.text2 {
+    color: hsl(0, 0%, 100%);
+    filter: opacity(20%);
+    font-size: 13px;
+}
+
+.clock {
+    background-image: url(./../../../public/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 45%;
+}
+
+.underCard {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px !important;
+}
+
+.photo {
+    background-image: url(./../../assets/image-avatar.png);
+    background-size: cover;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    border: white 1px solid;
+}
+
+.underCard p {
+    font-size: small;
+    margin-left: 100px;
+    padding-top: 15px;
+    color: hsl(0, 0%, 100%);
+    font-family: Font;
+    font-weight: 400;
+}
+
+.underCard span {
+    filter: opacity(20%);
+    color: hsl(0, 0%, 100%);
+    font-family: Font;
+    font-weight: 400;
+}
